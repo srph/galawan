@@ -21,6 +21,9 @@
 .u-text.-low {
   text-transform: lowercase;
 }
+.u-text.-low.-cap {
+  text-transform: capitalize;
+}
 .u-text.-truncate {
   whitespace: nowrap;
   overflow: hidden;
