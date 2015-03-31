@@ -1,5 +1,6 @@
 {
   "name": "galawan",
+  "description": "A simple collection of css utilities for Stylus",
   "version": "0.1.0",
   "homepage": "https://github.com/srph/galawan",
   "authors": [
