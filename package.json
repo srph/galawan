@@ -4,9 +4,10 @@
   "description": "A simple collection of css utilities for Stylus",
   "main": "index.js",
   "scripts": {
-    "build": "./node_modules/.bin/stylus src/main.styl --out ./dist",
-    "watch": "./node_modules/.bin/stylus src/main.styl --watch --out ./dist",
-    "prod": "./node_modules/.bin/stylus src/main.styl --out ./dist --compress"
+    "build": "./node_modules/.bin/stylus < src/main.styl > ./dist/galawan.css",
+    "watch": "./node_modules/.bin/stylus -w < src/main.styl > ./dist/galawan.css",
+    "prod": "./node_modules/.bin/stylus -c < src/main.styl > ./dist/galawan.min.css",
+    "start": "npm run build && npm run prod"
   },
   "repository": {
     "type": "git",
