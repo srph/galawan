@@ -1,0 +1,63 @@
+/**
+ * @name galawan
+ * @description This utility file strictly adheres to RSCSS.
+ * @license MIT
+ */
+
+ /**
+  * Some text utilities used to center, transform to up / low
+  */
+.u-text
+  &.-left
+    text-align left
+  &.-right
+    text-align right
+  &.-center
+    text-align center
+
+  &.-up
+    text-transform uppercase
+  &.-low
+    text-transform lowercase
+
+  /**
+   * Creates a one-liner text that ends
+   * overflowing text with an ellipsis
+   */
+  &.-truncate
+    whitespace nowrap
+    overflow hidden
+    text-overflow ellipsis
+
+/**
+ * Contain floats without resorting to representational markup,
+ * http//nicolasgallagher.com/micro-clearfix-hack/
+ */
+.u-clearfix
+  &:before, &:after
+    content " "
+    display table
+
+  &:after
+    clear both
+  // For IE
+  *zoom 1
+
+  > .--left
+    float left
+  > .--right
+    float right
+
+/**
+ * An element represented as a table. This is
+ * used to vertically center content.
+ */
+.u-table
+  display table
+  height 100%
+  width 100%
+
+  > .--inner
+    display table-cell
+    vertical-align center
+    text-align center

@@ -1,0 +1,24 @@
+{
+  "name": "galawan",
+  "version": "1.0.0",
+  "description": "A simple collection of css utilities for Stylus",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/stylus src/main.styl --out ./dist",
+    "watch": "./node_modules/.bin/stylus src/main.styl --watch --out ./dist",
+    "prod": "./node_modules/.bin/stylus src/main.styl --out ./dist --compress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/srph/galawan.git"
+  },
+  "author": "Kier Borromeo <seraphipod@gmail.com> (@srph)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/srph/galawan/issues"
+  },
+  "homepage": "https://github.com/srph/galawan",
+  "devDependencies": {
+    "stylus": "^0.50.0"
+  }
+}
