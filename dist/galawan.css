@@ -25,7 +25,7 @@
   text-transform: capitalize;
 }
 .u-text.-truncate {
-  whitespace: nowrap;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
